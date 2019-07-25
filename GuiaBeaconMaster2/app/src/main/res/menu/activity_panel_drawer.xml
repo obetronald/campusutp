@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_navi_24dp"
+            android:title="Navegación" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_list_24dp"
+            android:title="Lista Laboratorios" />
+
+        <item
+            android:id="@+id/nav_acerca"
+            android:icon="@drawable/ic_acerca_24dp"
+            android:title="Acerca de" />
+
+        <item
+            android:id="@+id/nav_cerrar"
+            android:icon="@drawable/ic_close_black_24dp"
+            android:title="Cerrar Sesion" />
+
+    </group>
+
+</menu>

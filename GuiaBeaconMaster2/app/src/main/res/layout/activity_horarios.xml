@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Azul2"
+    tools:context=".Activitys.HorariosActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Azul1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Campus"
+                android:textColor="@color/colorBlanco"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:textColor="@color/colorNegro">
+
+        <EditText
+            android:id="@+id/edtnombre"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:editable="false"
+            android:enabled="true"
+            android:hint="Laboratorio"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtdia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:clickable="false"
+            android:editable="false"
+            android:enabled="true"
+            android:hint="dia"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:textColor="@color/colorNegro">
+
+
+        <EditText
+            android:id="@+id/edtCodbeacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Codigo Beacon"
+            android:textColor="@color/colorBlanco"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.github.snowdream.android.widget.SmartImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"></com.github.snowdream.android.widget.SmartImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:background="@color/colorAzul"
+        android:layout_marginTop="5dp">
+
+        <ListView
+            android:id="@+id/lvDatos"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlanco"></ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+            <Button
+                android:id="@+id/stopReadingBeaconsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="81dp"
+                android:layout_gravity="bottom|end"
+
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_gps_off_black_24dp"
+                app:backgroundTint="@color/black"
+                app:srcCompat="@drawable/ic_gps_off_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <Button
+                android:id="@+id/startReadingBeaconsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="81dp"
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="bottom|start"
+                android:background="@drawable/ic_gps_fixed_black_24dp"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:srcCompat="@drawable/ic_gps_fixed_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

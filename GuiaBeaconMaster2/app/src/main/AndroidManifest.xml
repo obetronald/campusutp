@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.guiabeaconmaster2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logooficial3"
+        android:label="UTP CAMPUS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Activitys.Acerca" />
+        <activity android:name=".Activitys.Cerrar" />
+        <activity
+            android:name=".Activitys.DetalleHorario"
+            android:label="Horarios"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".Activitys.ListaLaboratorios"
+            android:label="@string/title_activity_lista_laboratorios"
+            android:theme="@style/NoActionBar" />
+        <activity android:name=".Activitys.ResetPassword" />
+        <activity android:name=".Activitys.Registrar" />
+        <activity
+            android:name=".Activitys.HorariosActivity"
+            android:label="@string/title_activity_horarios"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Activitys.PanelActivity"
+            android:label="Perdido en el Campus"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activitys.Login" />
+        <activity android:name=".interfaz.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_centerHorizontal="true"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:padding="2dp"
+    android:foregroundGravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/idGridlabosis"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/imagever4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <android.support.v7.widget.CardView
+            android:background="@drawable/side_nav_blanco"
+            android:id="@+id/cardLabosis"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/labsistemas" />
+
+            <TextView
+                android:id="@+id/txtNomb"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="70dp"
+                android:text="Laboratorio Sistemas"
+                android:textColor="@color/Amariillo1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/verdetalles"
+                style="@android:style/Widget.Holo.Light.Button.Small"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="@drawable/side_nav_blanco"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_navegacion"
+                android:textColor="@color/colorBlanco"
+                android:onClick="ShowPopup"
+                android:text="Ver Imagen" />
+
+            <Button
+                android:id="@+id/verimagen"
+                style="@android:style/Widget.Holo.Light.Button.Small"
+                android:layout_width="120dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorTransparente"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/Amariillo1"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:text="Ver Horarios" />
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>
